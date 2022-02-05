@@ -1,0 +1,250 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To Launch the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2833355358,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the browser Company Selection",
+            "match": {
+              "location": "CompanySelectionStepDefs.launchTheBrowserCompanySelection()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Company Selection page. Displays list of companies (and their status) available to the user.",
+        "description": "  Only \"Plooto Inc\" company will lead to Dashboard",
+        "id": "displays-list-of-companies-and-their-status;company-selection-page.-displays-list-of-companies-(and-their-status)-available-to-the-user.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 781305074,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Open Company Selection page on your browser \"https://app.plooto.com/qa-test-j1K3eVzQ/company_select.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://app.plooto.com/qa-test-j1K3eVzQ/company_select.html\"",
+                  "offset": 44
+                }
+              ],
+              "location": "CompanySelectionStepDefs.openCompanySelectionPageOnYourBrowser(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5495718962,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Displays list of companies and their status available to the user more than 40 with more 2 symbols",
+            "match": {
+              "arguments": [
+                {
+                  "val": "40",
+                  "offset": 76
+                },
+                {
+                  "val": "2",
+                  "offset": 89
+                }
+              ],
+              "location": "CompanySelectionStepDefs.displaysListOfCompaniesAndTheirStatusAvailableToTheUserMoreThanWithMoreSymbols(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 748890557,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Only \"Plooto Inc\" company will lead to Dashboard \"dashboard.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Plooto Inc\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"dashboard.html\"",
+                  "offset": 49
+                }
+              ],
+              "location": "CompanySelectionStepDefs.onlyCompanyWillLeadToDashboard(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Displays list of companies and their status",
+    "description": "",
+    "id": "displays-list-of-companies-and-their-status",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\CompanySelection.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To Launch the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2818534127,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the browser Pending Payments",
+            "match": {
+              "location": "PendingPaymentsStepDefs.launchTheBrowserPendingPayments()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Pending Payments page. Displays ongoing payments.",
+        "description": "  Payment to Cavages will navigate to a Payment Approval page",
+        "id": "displays-ongoing-payments;pending-payments-page.-displays-ongoing-payments.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 765558827,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Open Pending Payments page on your browser \"https://app.plooto.com/qa-test-j1K3eVzQ/pending_payments.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://app.plooto.com/qa-test-j1K3eVzQ/pending_payments.html\"",
+                  "offset": 43
+                }
+              ],
+              "location": "PendingPaymentsStepDefs.openPendingPaymentsPageOnYourBrowser(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 609446893,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "10 ongoing payments items \"displayName\" should be displayed on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 0
+                },
+                {
+                  "val": "\"displayName\"",
+                  "offset": 26
+                }
+              ],
+              "location": "PendingPaymentsStepDefs.ongoingPaymentsItemsShouldBeDisplayedOnThePage(int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 286620609,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click \"Cavages\" item in Pending Payments list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cavages\"",
+                  "offset": 6
+                }
+              ],
+              "location": "PendingPaymentsStepDefs.clickItemInPendingPaymentsList(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34009242,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Check \"/payment_approval.html\" page opens with \"Sent Payment Details\" label",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/payment_approval.html\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Sent Payment Details\"",
+                  "offset": 47
+                }
+              ],
+              "location": "PendingPaymentsStepDefs.checkPageOpensWithLabel(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 676913273,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Finish Pending Payments test",
+            "match": {
+              "location": "PendingPaymentsStepDefs.finishPendingPaymentsTest()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Displays ongoing payments",
+    "description": "",
+    "id": "displays-ongoing-payments",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\PendingPayments.feature",
+    "tags": []
+  }
+]
